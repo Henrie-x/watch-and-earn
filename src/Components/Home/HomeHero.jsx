@@ -1,6 +1,6 @@
 import { MoveRight, Circle, Play, MoveUpRight, Check, Star} from 'lucide-react';
 import { Link } from "react-router-dom"
-import "./Css/HomeHero.css"
+import "./Css/HomeHeroNew.css"
 
 function HomeHero() {
   return (
