@@ -1,0 +1,361 @@
+/* ========================================
+   WITHDRAW PAGE
+======================================== */
+
+.withdraw-page {
+  min-height: 100vh;
+  background: #f6f8fc;
+  color: #111827;
+  font-family: "Inter", sans-serif;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.withdraw-header {
+  height: 68px;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.withdraw-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #64748b;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+.withdraw-back:hover {
+  color: #2563eb;
+}
+
+.withdraw-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.withdraw-title svg {
+  width: 21px;
+  height: 21px;
+  color: #2563eb;
+}
+
+.withdraw-title strong {
+  color: #111827;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+.withdraw-main {
+  width: min(100% - 32px, 560px);
+  margin: 32px auto 60px;
+}
+
+
+/* ========================================
+   BALANCE CARD
+======================================== */
+
+.withdraw-balance {
+  padding: 25px 26px;
+  margin-bottom: 18px;
+
+  background: #2563eb;
+  border-radius: 16px;
+
+  color: #ffffff;
+
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.12);
+}
+
+.withdraw-balance span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.withdraw-balance h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.withdraw-balance small {
+  display: block;
+  margin-top: 10px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   FORM CARD
+======================================== */
+
+.withdraw-card {
+  padding: 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.04);
+}
+
+
+/* ========================================
+   CARD HEADING
+======================================== */
+
+.withdraw-card-heading {
+  margin-bottom: 24px;
+}
+
+.withdraw-card-heading h2 {
+  margin: 0 0 6px;
+
+  color: #111827;
+
+  font-size: 20px;
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.withdraw-card-heading p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.withdraw-form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+
+/*
+  IMPORTANT:
+  Force every label to take the full width.
+  This prevents the inputs from getting
+  pushed to the right.
+*/
+
+.withdraw-form label {
+  display: block;
+  width: 100%;
+}
+
+.withdraw-form label > span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #374151;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   INPUT
+======================================== */
+
+.withdraw-input {
+  width: 100%;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 15px;
+  gap: 11px;
+
+  background: #f9fafb;
+
+  border: 1px solid #dfe3e8;
+  border-radius: 10px;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.withdraw-input svg {
+  width: 18px;
+  height: 18px;
+
+  flex-shrink: 0;
+
+  color: #94a3b8;
+}
+
+.withdraw-input > span {
+  flex-shrink: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.withdraw-input input {
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #111827;
+
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.withdraw-input input::placeholder {
+  color: #9ca3af;
+}
+
+.withdraw-input:focus-within {
+  background: #ffffff;
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.withdraw-button {
+  width: 100%;
+  height: 52px;
+
+  margin-top: 4px;
+
+  border: 0;
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.withdraw-button:hover {
+  background: #1d4ed8;
+
+  box-shadow: 0 7px 16px rgba(37, 99, 235, 0.18);
+}
+
+.withdraw-button:active {
+  transform: scale(0.99);
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .withdraw-header {
+    height: 64px;
+    padding: 0 18px;
+  }
+
+  .withdraw-main {
+    width: calc(100% - 28px);
+    margin: 22px auto 45px;
+  }
+
+  .withdraw-balance {
+    padding: 23px;
+    border-radius: 15px;
+  }
+
+  .withdraw-balance h1 {
+    font-size: 29px;
+  }
+
+  .withdraw-card {
+    padding: 22px 18px;
+    border-radius: 15px;
+  }
+
+  .withdraw-card-heading h2 {
+    font-size: 18px;
+  }
+
+  .withdraw-form {
+    gap: 16px;
+  }
+
+  .withdraw-input {
+    height: 50px;
+  }
+
+  .withdraw-button {
+    height: 50px;
+  }
+}

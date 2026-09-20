@@ -1,0 +1,136 @@
+.points-section {
+  max-width: 1180px;
+  margin: auto;
+  padding: 25px;
+}
+
+.points-card {
+  padding: 29px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+
+  border: 1px solid #dce7f8;
+  border-radius: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #f7faff,
+    #eef5ff
+  );
+}
+
+/* ================= ICON ================= */
+
+.points-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: var(--white);
+  color: var(--primary);
+
+  box-shadow:
+    0 8px 20px rgba(20, 31, 56, 0.06);
+}
+
+/* ================= CONTENT ================= */
+
+.points-content h2 {
+  margin: 5px 0;
+
+  color: var(--text);
+  font-size: 21px;
+  font-weight: 750;
+}
+
+.points-content p {
+  margin: 0;
+
+  color: #667085;
+  font-size: 10px;
+}
+
+/* ================= RATE ================= */
+
+.points-rate {
+  min-width: 205px;
+  padding: 16px;
+
+  border-radius: 13px;
+
+  background: var(--white);
+
+  text-align: center;
+
+  box-shadow:
+    0 7px 20px rgba(20, 31, 56, 0.04);
+}
+
+.points-rate > span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #98a2b3;
+
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.points-rate strong {
+  display: block;
+
+  color: var(--primary);
+
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.points-rate strong small {
+  margin: 0 5px;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+}
+
+.points-rate > small {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #98a2b3;
+
+  font-size: 8px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+  .points-section {
+    padding: 20px;
+  }
+
+  .points-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .points-icon {
+    margin: 0 auto;
+  }
+
+  .points-rate {
+    width: 100%;
+  }
+}

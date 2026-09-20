@@ -1,0 +1,755 @@
+.home-hero {
+  max-width: 1180px;
+  min-height: 610px;
+  margin: auto;
+  padding: 90px 25px 65px;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ================= CONTENT ================= */
+
+.hero-content {
+  max-width: 620px;
+}
+
+/* ================= BADGE ================= */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  border: 1px solid #d8e6fb;
+  border-radius: 50px;
+
+  background: rgba(239, 246, 255, 0.85);
+  color: #2563eb;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  box-shadow:
+    0 4px 14px rgba(37, 99, 235, 0.06);
+}
+
+.hero-badge svg {
+  flex-shrink: 0;
+}
+
+/* ================= HEADING ================= */
+
+.hero-content h1 {
+  max-width: 600px;
+
+  margin: 20px 0 17px;
+
+  color: #172033;
+
+  font-size: clamp(40px, 5vw, 62px);
+  font-weight: 750;
+  line-height: 1.02;
+  letter-spacing: -2.8px;
+}
+
+.hero-content h1 span {
+  display: block;
+
+  color: #2563eb;
+}
+
+/* ================= DESCRIPTION ================= */
+
+.hero-description {
+  max-width: 520px;
+
+  margin-bottom: 29px;
+
+  color: #667085;
+
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 1.75;
+}
+
+/* ================= BUTTONS ================= */
+
+.hero-btns {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  flex: 1;
+
+  min-height: 49px;
+
+  padding: 0 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* PRIMARY BUTTON */
+
+.hero-primary-btn {
+  gap: 12px;
+
+  background: #2563eb;
+  color: #fff;
+
+  box-shadow:
+    0 10px 25px rgba(37, 99, 235, 0.18);
+}
+
+.hero-primary-btn:hover {
+  transform: translateY(-2px);
+
+  background: #1d4ed8;
+
+  box-shadow:
+    0 14px 30px rgba(37, 99, 235, 0.24);
+}
+
+.hero-primary-btn span {
+  display: flex;
+  align-items: center;
+}
+
+.hero-primary-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* SECONDARY BUTTON */
+
+.hero-secondary-btn {
+  border: 1px solid #d7dee9;
+
+  background: rgba(255, 255, 255, 0.85);
+  color: #344054;
+
+  box-shadow:
+    0 5px 15px rgba(23, 32, 51, 0.04);
+}
+
+.hero-secondary-btn:hover {
+  transform: translateY(-2px);
+
+  border-color: #b9d4fa;
+
+  background: #f8fbff;
+  color: #2563eb;
+
+  box-shadow:
+    0 9px 20px rgba(37, 99, 235, 0.08);
+}
+
+/* ================= TRUST ================= */
+
+.hero-trust {
+  width: 100%;
+
+  margin-top: 31px;
+  padding: 15px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 28px;
+
+  border: 1px solid #dce8f8;
+  border-radius: 15px;
+
+  background: rgba(248, 251, 255, 0.92);
+
+  box-shadow:
+    0 10px 28px rgba(37, 99, 235, 0.07),
+    0 2px 7px rgba(23, 32, 51, 0.035);
+}
+
+.hero-trust div:not(.trust-divider) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 3px;
+
+  text-align: center;
+}
+
+.hero-trust strong {
+  color: #172033;
+
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.hero-trust span {
+  color: #8993a4;
+
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.trust-divider {
+  width: 1px;
+  height: 28px;
+
+  background: #dce4ef;
+}
+
+/* ================= HERO VISUAL ================= */
+
+.hero-visual {
+  position: relative;
+
+  width: 100%;
+
+  margin: 1rem 0;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-glow {
+  position: absolute;
+
+  width: 90%;
+  height: 90%;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(37, 99, 235, 0.15),
+      transparent 68%
+    );
+
+  filter: blur(12px);
+
+  pointer-events: none;
+}
+
+/* ================= MAIN EARNING CARD ================= */
+
+.earning-card {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  padding: 28px;
+
+  border: 1px solid rgba(226, 232, 241, 0.9);
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  box-shadow:
+    0 35px 80px rgba(20, 31, 56, 0.12),
+    0 12px 30px rgba(20, 31, 56, 0.06);
+
+  backdrop-filter: blur(18px);
+}
+
+/* ================= CARD TOP ================= */
+
+.earning-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.earning-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  box-shadow:
+    0 6px 15px rgba(37, 99, 235, 0.08);
+}
+
+.earning-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ================= ONLINE STATUS ================= */
+
+.earning-status {
+  position: relative;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d8f1e2;
+  border-radius: 50%;
+
+  background: #ecfdf3;
+  color: #039855;
+}
+
+.dot {
+  position: relative;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+}
+
+.dot::before {
+  content: "";
+
+  position: absolute;
+
+  inset: -4px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+
+  opacity: 0.25;
+
+  animation: onlinePulse 1.8s ease-out infinite;
+}
+
+@keyframes onlinePulse {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.5;
+  }
+
+  70% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* ================= BALANCE ================= */
+
+.earning-label {
+  margin: 27px 0 5px;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.earning-card h2 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 34px;
+  font-weight: 750;
+
+  letter-spacing: -1.2px;
+}
+
+/* ================= PROGRESS ================= */
+
+.earning-progress {
+  margin-top: 23px;
+
+  padding: 14px;
+
+  border: 1px solid #edf1f6;
+  border-radius: 14px;
+
+  background: #f8fafc;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 9px;
+}
+
+.progress-info span {
+  color: #98a2b3;
+
+  font-size: 9px;
+}
+
+.progress-info strong {
+  color: #344054;
+
+  font-size: 10px;
+}
+
+.home-progress-track {
+  height: 7px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #e7ebf2;
+}
+
+.home-progress-fill {
+  width: 67%;
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #2563eb;
+
+  box-shadow:
+    0 2px 7px rgba(37, 99, 235, 0.2);
+}
+
+/* ================= EARNING ROW ================= */
+
+.earning-row {
+  margin-top: 20px;
+  padding-top: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid #edf0f4;
+}
+
+.earning-row div:first-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.earning-row span {
+  color: #98a2b3;
+
+  font-size: 9px;
+}
+
+.earning-row strong {
+  color: #039855;
+
+  font-size: 11px;
+}
+
+.earning-arrow {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* ================= FLOATING CARDS ================= */
+
+.floating-card {
+  position: absolute;
+  z-index: 4;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 15px;
+
+  border: 1px solid rgba(226, 232, 241, 0.9);
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  box-shadow:
+    0 18px 40px rgba(20, 31, 56, 0.13),
+    0 5px 15px rgba(20, 31, 56, 0.05);
+
+  backdrop-filter: blur(16px);
+
+  white-space: nowrap;
+
+  animation: floatingCard 4s ease-in-out infinite;
+}
+
+.floating-card > span {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.floating-card > span svg {
+  width: 17px;
+  height: 17px;
+}
+
+.floating-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.floating-card strong {
+  color: #172033;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.floating-card small {
+  color: #8993a4;
+
+  font-size: 8px;
+  font-weight: 500;
+}
+
+/* ================= FLOATING CARD ONE ================= */
+/* Task Complete — top right */
+
+.floating-card-one {
+  top: 16%;
+  right: -10px;
+  left: auto;
+}
+
+/* ================= FLOATING CARD TWO ================= */
+/* Reward Earned — bottom left */
+
+.floating-card-two {
+  right: auto;
+  bottom: 16%;
+  left: -10px;
+
+  animation-delay: -2s;
+}
+
+.floating-card-two > span {
+  background: #fff7ed;
+  color: #f59e0b;
+}
+
+/* ================= FLOATING ANIMATION ================= */
+
+@keyframes floatingCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+  .home-hero {
+    gap: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(38px, 6vw, 52px);
+  }
+
+  .hero-visual {
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  .earning-card {
+    width: 100%;
+  }
+
+  .floating-card-one {
+    right: -5px;
+  }
+
+  .floating-card-two {
+    left: -5px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    padding: 65px 20px 55px;
+
+    gap: 50px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+
+  .hero-visual {
+    width: 100%;
+
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .earning-card {
+    width: 100%;
+  }
+
+  .floating-card-one {
+    right: -2px;
+  }
+
+  .floating-card-two {
+    left: -2px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .home-hero {
+    padding: 55px 16px 45px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+
+    letter-spacing: -1.8px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .hero-primary-btn,
+  .hero-secondary-btn {
+    width: 100%;
+  }
+
+  .hero-trust {
+    gap: 14px;
+
+    padding: 13px 10px;
+  }
+
+  .hero-trust strong {
+    font-size: 15px;
+  }
+
+  .hero-trust span {
+    font-size: 8px;
+  }
+
+  .hero-visual {
+    padding: 1rem;
+  }
+
+  .earning-card {
+    padding: 23px;
+  }
+
+  .floating-card {
+    padding: 9px 11px;
+
+    gap: 7px;
+  }
+
+  .floating-card > span {
+    width: 29px;
+    height: 29px;
+  }
+
+  .floating-card > span svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .floating-card strong {
+    font-size: 8px;
+  }
+
+  .floating-card small {
+    font-size: 7px;
+  }
+
+  .floating-card-one {
+    top: 10%;
+    right: -8px;
+  }
+
+  .floating-card-two {
+    bottom: 10%;
+    left: -8px;
+  }
+}
